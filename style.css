@@ -131,6 +131,9 @@ gap: 40px;
 }
 
 .cafe{
+    background-image: url(img/fundosection2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     color: var(--color-headings);
   & h3{
     text-align: center;
@@ -205,7 +208,8 @@ gap: 40px;
                 width: 260px;
                 height: 40px;
                 border-radius: 20px;
-                
+                font-weight: bold;
+                border: 0;
             }
             
     }
