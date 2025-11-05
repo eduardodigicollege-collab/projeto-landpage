@@ -314,16 +314,18 @@ header {
         text-align: right;
         padding-right: 30px;
         color: white;
-        & h2{
+
+        & h2 {
             font-size: 44px;
-        margin-bottom: 30px;
+            margin-bottom: 30px;
         }
-        & a{
+
+        & a {
             width: 280px;
             line-height: 50px;
             display: inline-block;
             background-color: white;
-            color: black    ;
+            color: black;
             font-weight: 600;
             font-size: 16px;
             text-align: center;
@@ -343,32 +345,167 @@ header {
 
 .info {
     height: 600px;
-margin-top: -20px   ;
-display: flex;
-justify-content: center;
-text-align: center;
-gap: 50px;
-background-image: url(img/backinfo.png);
-background-size: cover;
-background-repeat: no-repeat;
-& div{
-    margin-top: 200px;
-}
-& div:nth-child(1){
-    text-align: left;
-    width: 450px;
-     height: 310px;
-     color: #4d1d1d;
-    & p{
-        font-size: 35px;
-        font-weight: 600;
-       
+    margin-top: -20px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    background-image: url(img/backinfo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    & div {
+        margin-top: 200px;
     }
-}
-& div:nth-child(2){
-    text-align: left;
-    width: 338px;
-    color: #3c0e0e;
+
+    & div:nth-child(1) {
+        text-align: left;
+        width: 450px;
+        height: 310px;
+        color: #4d1d1d;
+
+        & p {
+            font-size: 35px;
+            font-weight: 600;
+
+        }
+    }
+
+    & div:nth-child(2) {
+        text-align: left;
+        width: 338px;
+        color: #3c0e0e;
+    }
+
 }
 
+.local {
+
+    width: calc(100% - 400px);
+    border-radius: 48px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+    color: white;
+    background-image: linear-gradient(#541511A8, #F3C7C4);
+    position: relative;
+    & > img{
+        position: absolute;
+        left: 50%;
+        bottom: -40px;
+        transform: translateX(-53%);
+    }
+    
+
+    & > div:nth-child(1) {
+        flex: 1;
+        padding: 50px 0 50px 40px;
+
+        & h1 {
+            font-size: 80px;
+            line-height: 80px;
+
+            & div {
+                width: 50px;
+                height: 1px !important;
+                background-color: white;
+                margin-top: 12px;
+            }
+
+        }
+        & h3{
+            font-size: 20px;
+            margin-top: 16px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        & a{
+            display: block;
+            color: var(--color-headings);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            font-size: 16px;
+
+        }
+    }
+    & > div:nth-child(2){
+            
+            background-image: linear-gradient(45deg, rgba(255, 255, 255,0.5), #541511A8 );
+            border-radius: 0 48px 48px 0;
+            width: 380px;
+            padding: 30px 40px;
+
+            & h2{
+                font-size: 35px;
+                & div {
+                width: 90%;
+                height: 1px;
+                background-color: white;
+                margin-top:10px;
+                margin-bottom: 40px;
+            }
+            }
+           
+            & p{ 
+                display: block;
+                text-align: left;
+            margin-bottom: 25px;
+            }
+            & div{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+    }
+
+
+
+}
+
+footer{
+width: calc(100% - 440px);
+display: flex;
+border-top: 1px solid rgba(0, 0, 0, 0.25);
+margin: 0 auto;
+margin-top: 85px;
+padding-top: 70px;
+display: flex;
+justify-content: space-between;
+color: var(--color-headings);
+
+& h6{
+    font-size: 20px;
+    font-weight: 450;
+    color: var(--color-text2);
+    margin-bottom: 10px;
+
+}
+
+& p{
+
+
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+& .links{
+    display: flex;
+    flex-direction: column;
+    & a{
+        text-decoration: none;
+        color: var(--color-headings);
+        transition: 200ms;
+        &:hover{
+            color: var(--color-pink1);
+            transition: 200ms;
+            font-size: larger ;
+        }
+    }
+}
+
+
+
+    
 }
